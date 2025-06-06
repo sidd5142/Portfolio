@@ -5,6 +5,7 @@ import {illustration, contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import profileImage from "../../assets/images/m3.jpg";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
@@ -52,12 +53,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-image-div">
-            <img
-              id="Profile-pic"
-              alt="Profile Photo"
-              src={require("../../assets/images/m3.jpg")}
-              style={{height: "900px", objectFit: "cover"}}
-            ></img>
+            <img id="Profile-pic" alt="Profile Photo" src={profileImage} />
           </div>
         </div>
       </div>
